@@ -14,7 +14,7 @@ def get_client_es():
 
 
 if __name__ == '__main__':
-    tm = TransformerModel("elastic/distilbert-base-cased-finetuned-conll03-english", "ner")
+    tm = TransformerModel("distilbert-base-uncased-finetuned-sst-2-english", "text_classification")
     tmp_path = "models"
     Path(tmp_path).mkdir(parents=True, exist_ok=True)
     model_path, config, vocab_path = tm.save(tmp_path)

@@ -1,5 +1,6 @@
 elasticsearch~=8.4.3
 path
 eland~=8.3.0
+torch==1.11
 transformers
 sentence-transformers>=2.1.0
